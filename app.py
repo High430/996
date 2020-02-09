@@ -1,27 +1,9 @@
-command = ""
-started = False
-while True:
-    command = input("> ").lower()
-    if command == "start":
-        if started:
-            print("Car is already started!")
-        else:
-            started = True
-            print("Car started...")
-    elif command == "stop":
-        if not started:
-            print("Car is already stopped!")
-        else:
-            started = False
-            print("Car stopped.")
-        print("Car stopped.")
-    elif command == "help":
-        print("""
-start - to start the car
-stop - to stop the car
-quit - to quit
-        """)
-    elif command == "quit":
-        break
-    else:
-        print("Sorry, I don't understand that!")
+用户名 = input('')
+
+if len(用户名) < 3:
+    print('用户名必须大于三位')
+elif len(用户名) > 10:
+    print('用户名不得大于十位')
+else:
+    print('这名字不错！')
+
